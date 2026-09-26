@@ -37,7 +37,7 @@ if st.button("Analyze"):
             ai_insight = "Gemini AI analysis unavailable due to missing API key."
             if gemini_key:
                 try:
-                    model = genai.GenerativeModel("gemini-2.5-flash")
+                    model = genai.GenerativeModel("gemini-3.8-flash")
                     prompt = f"""
                     You are a cybersecurity expert analyzing a {target_type} named '{target}'.
                     Here is the raw data collected from intelligence sources:
